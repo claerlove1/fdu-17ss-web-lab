@@ -1,0 +1,255 @@
+/* reset browser styles */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.2;
+}
+ol { 
+	padding-left: 1.4em;
+	list-style: decimal;
+}
+ul {
+	padding-left: 1.4em;
+	list-style: square;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+/* end reset browser styles */
+body{
+	margin:0;
+	padding:0;
+	background-color:#E8EAF6;
+}
+
+h1,p,div,i{
+	margin:0;
+	padding:0;
+
+}
+p {     padding-left:0.5em;
+	padding-top:0em;
+	padding-right:0.5em;
+	padding-bottom:0;
+	background-color:white;	
+}
+
+.pic{
+	width:100%;
+	heigh:auto;
+}
+
+#bigContainer{
+	margin:auto 5%;
+	
+}
+
+.header{
+	margin:0;
+	padding:1em;
+        padding-top:0;
+	color:white;
+	background-color: #1A237E; 
+        
+}
+.header1{
+	margin:0;
+	
+ 	padding-left:1em;
+	padding-top:1em;
+	padding-bottom:1em;
+	color:white;
+ 	background-color:#7986CB;
+
+}
+
+.header2{
+	margin:0;
+ 	padding-left:1em;
+	padding-top:0.5em;
+	padding-bottom:0.5em;
+	color:#7990A3;
+ 	background-color:#C5CAE9;
+
+}
+.header3{
+	margin:0;
+        padding-left:1em;
+	padding-top:0.5em;
+	padding-bottom:1em;
+        
+	}
+.a{
+	outline-style:solid;
+        outline-width:thin;
+        outline-color:#C5CAE9;
+}
+h1{	
+	font-size:1.5em
+}
+
+nav
+{
+list-style-type:none;
+margin:0;
+padding-left:0;
+padding-top:0;
+padding-bottom:0;
+background-color:#3F51B5;
+overflow:hidden;
+}
+li
+{
+width:auto;
+float:left;
+text-align:left;
+}
+li>a:link,li>a:visited
+{
+display:block;
+width:120px;
+font-weight:bold;
+background-color:#3F51B5;
+text-align:center;
+padding-left:1em;
+padding-top:0.3em;
+padding-bottom:0.3em;
+padding-right:1em
+
+
+}
+li>a:hover,li>a:active
+{
+color:white;
+background-color:#F50057;
+
+}
+a{
+   color:#00B0FF;
+   
+}
+li>a{
+	color:#00B0FF;
+        padding:0.3em 0.6em 1em 0.3em;
+}
+.ss{
+	padding-top:0.5em;
+        background-color:#E8EAF6;
+}
+.sss1{
+	padding-left:0.5em;
+	padding-top:0.5em;
+	padding-right:0.5em;
+	padding-bottom:0;
+ 	background-color:white;	
+}
+.sss2{
+	padding-left:0.5em;
+	padding-top:0;
+	padding-right:0.5em;
+	padding-bottom:0.5em;
+ 	background-color:white;	
+}
+.soliddouble {  
+	
+	margin-top:-8px;
+	padding-left:0.5em;
+	padding-top:0;
+	padding-right:0.5em;
+	padding-bottom:0;
+ 	background-color:white;	
+               }
+.one{
+     padding-left:0.5em;
+	padding-top:0;
+	padding-right:0.5em;
+	padding-bottom:0;
+ 	background-color:white;	
+}
+.two{
+        padding-right:1em;
+	padding-bottom:0.5em;	
+        direction:rtl
+	
+}
+.header4{
+	margin:0;
+        color:white;	
+        padding-left:1em;
+	padding-top:1em;
+	padding-bottom:1em;
+        background-color:#7986CB;
+	}
+.header5{
+	margin:0;
+        color:#C5CAE9;
+	padding-left:0.5em;
+	padding-top:0.5em;
+	padding-bottom:0.5em;	
+	}
+.header6{
+	margin:0;
+        padding-left:0.5em;
+	padding-top:0;
+	padding-bottom:0.5em;
+	border-bottom-width:thin;
+        border-bottom-style:solid;
+        border-bottom-color:black;	
+	}
+.sss4{
+	color:#C5CAE9
+	padding-top:0;
+	padding-left:1em;
+	padding-bottom:1em;
+	padding-right:1em;
+ 	background-color:white;	
+        border-bottom-width:thin;
+        border-bottom-style:solid;
+        border-bottom-color:#C5CAE9;
+        
+}
+time{
+	margin:0;
+        color:#F5A2C1;
+	padding-left:0;	
+	}
+.header7{
+	
+        margin:0;
+	padding:1em;
+	color:white;
+	background-color: #1A237E; 
+	padding-left:1em;
+	padding-top:1.3em;
+	padding-bottom:0;	
+	}
+.header8{
+        margin:0;
+	padding:1em;
+	color:white;
+	background-color: #1A237E; 
+	padding-left:1em;
+	padding-top:0.6em;
+	padding-bottom:1.3em;	
+	}
+img{vertical-align:top;}
+.aa{
+	padding-top:0.5em;
+        background-color:#E8EAF6;
+}
+.ssa{
+	padding-top:0.5em;
+        background-color:white;
+}
