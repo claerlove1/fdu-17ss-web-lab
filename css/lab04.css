@@ -105,7 +105,7 @@ input[name=title] {
   width: 100%;
 }
 input[name=photo] {
-  width: 16%;
+  width: 8%;
 }
 input[name=city],
 select {
