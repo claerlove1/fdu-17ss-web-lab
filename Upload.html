@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>lab05</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+</head>
+<body>
+<form>
+<div class = "container-fluid mx-center w-75">
+    <div class="row">
+        <div class="foat-left col-sm-4">
+            <h1>Share Your Travels</h1>
+            <p>let us know where you've been</p >
+        </div>
+        <nav class="navbar navbar-expand-sm col-sm-8">
+            <ul class="navbar-nav">
+                <div class="row">
+                    <li class="nav-item col-sm-3">
+                        <a class="nav-link text-dark" href="lab5.html">Gallery</a>
+                    </li>
+                    <li class="nav-item col-sm-6">
+                        <a class="nav-link text-dark" href="#">Felling Lucky</a>
+                    </li>
+                    <li class="nav-item col-sm-3">
+                        <a class="nav-link text-dark" href="#">User</a>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="card">
+    <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <h3>Photo Detalls</h3>
+
+                    <label for="inputPassword">Title</label>
+                    <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Give your photo a descriptive name">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="name">Description</label>
+                        <textarea class="form-control" rows="3" placeholder="Adding a rich description will help with search results"></textarea>
+                    </div>
+
+                <div class="form-group">
+                    <p>Continent</p>
+                    <select class="form-control">
+                        <option value="">Choose continent</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Country</p>
+                    <select class="form-control">
+                        <option value="">Choose country</option>
+                    </select>
+                </div>
+
+                    <label>City</label>
+                    <div class="form-group">
+                        <input type="text" class="form-control">
+                    </div>
+
+                <div class="radio">
+                    <label>Copyright?</label><br>
+                    <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> All rights reserved
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked>Creative Commons
+                    </label>
+                </div><br>
+                <label for="name">Creative Commons Types</label>
+                <div>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1"> Attribution
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox2" value="option2"> Noncommercial
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox3" value="option3"> No Derivative Works
+                    </label><br>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox4" value="option4"> I accept the software license
+                    </label>
+                </div>
+                <p>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            Rate this photo<br>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-lg-1">
+                        </div>
+                        <div class="col-lg-8">
+                            Color Collections<br>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                </p><br>
+                        <button type="submit" class="btn btn-dark">Submit</button>
+                        <button type="reset" class="btn btn-dark">Clear Form</button>
+            </div>
+        <div class="col-md-1"></div>
+    </div>
+    </div>
+</div>
+</form>
+</body>
+</html>
