@@ -1,0 +1,153 @@
+<html>
+<head>
+    <title>Lab7</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        #select, #commit, #nowTable {
+            width: 300px;
+        }
+        table {
+            margin: 0 auto;
+        }
+        .text1{
+            display:none;
+        }
+        #commit,#add{display:none;}
+        th {
+            background-color: grey;
+            color: whitesmoke;
+        }
+        tr:nth-child(odd) td {
+            background-color: lightgrey;
+        }
+        td {
+            padding: 0 0.5em;
+        }
+    </style>
+</head>
+<body>
+<form id="form">
+    <select title="select" id="select"  onchange="five()">
+        <option>SELECT ONE</option>
+        <option>CREATE TABLE</option>
+        <option>ADD ROW</option>
+        <option>DELETE ROW</option>
+        <option>DELETE TABLE</option>
+    </select>
+    <div id="content"></div>
+    <div id="text" class ="text1">
+        <input type="text" placeholder="Table Name" id="text2"></input>
+        <input type="number"  placeholder="Columns Numbers" id="form1"></input>
+        <div id="content1"></div>
+    </div>
+
+    <input type="button" value="commit" id="commit">
+</form>
+<select title="nt" id="nowTable">
+    <option>SELECT (default: last created)</option>
+</select>
+<div id="table"></div>
+<script>
+    form1 = document.getElementById("form1");
+    select = document.getElementById("select");
+    commit = document.getElementById("commit");
+    text = document.getElementById("text");
+    text2 = document.getElementById("text2");
+    text3 = document.getElementById("text3");
+    content1 = document.getElementById("content1");
+    nowTable = document.getElementById("nowTable");
+    add=document.getElementById("add");
+    var array = [];
+    var bothform = [];
+    select.onchange=function(){
+        let selectlindex= select.selectedIndex;
+        if(selectlindex===4){
+            let box = "";
+            box+="<p>";
+            box+="WARNING: You cannot undo this action!";
+            box+="</p>";
+            commit.style.display="inline";
+            text.style.display="none";
+            let container = document.getElementById("content");
+            container.innerHTML=box+"";
+        }
+        else if(selectlindex===0){
+            commit.style.display="none";
+            text.style.display="none";
+            let container = document.getElementById("content");
+            container.innerHTML="";
+        }else if(selectlindex===2){
+            let box = "";
+            box+="<input type=\"text\" placeholder=\"Attribute\" id=\"text3\">";
+            box+="</input>";
+            box+="<input type=\"text\" placeholder=\"Attribute\" id=\"text3\">";
+            box+="</input>";
+            commit.style.display="inline";
+            text.style.display="none";
+            let container = document.getElementById("content");
+            container.innerHTML=box+"";
+        }
+        else if(selectlindex===3){
+            commit.style.display="inline";
+            text.style.display="none";
+            let container = document.getElementById("content");
+            container.innerHTML="";
+        }
+        else if(selectlindex===1){
+            commit.style.display="none";
+            text.style.display="inline";
+            let container = document.getElementById("content");
+            container.innerHTML="";
+        }
+    }
+    form1.onchange=function(){
+        let a = parseInt(form1.value);
+        if(!(a==="")){commit.style.display="inline";}
+        form2(a);
+    }
+    function form2(num){
+        while(content1.hasChildNodes()){
+            content1.removeChild(content1.firstChild);
+        }
+        for(let i =0;i<num;i++){
+            array[i]=document.createElement("input");
+            array[i].type="text";
+            array[i].placeholder ="Attribute";
+            content1.appendChild(array[i]);
+        }
+    }
+
+    commit.onclick=function(){
+        switch(select.selectedIndex){
+            case 1:
+                let name =document.getElementById("text2").value;
+                add(name);
+                let table=document.createElement("table");
+                let tr=document.createElement("tr");
+                for(let i=0;i<array.length;i++){
+                    let th=document.createElement("th");
+                    th.innerHTML=array[i].value;
+                    tr.appendChild(th);
+                }
+                table.appendChild(tr);
+                bothform[bothform.length]=table;
+                let div2=document.getElementById("table");
+                if(div2.hasChildNodes()){
+                    div2.removeChild(div2.firstChild);}
+                    div2.appendChild(table);
+            case 2:
+
+        }
+    }
+    function add(nameValue){
+        let option=document.createElement("option");
+        option.innerHTML=nameValue;
+        option.selected=true;
+        nowTable.appendChild(option);
+    }
+
+</script>
+</body>
+</html>
