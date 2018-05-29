@@ -10,17 +10,6 @@ function generateLink($url, $label, $class) {
 
 function outputPostRow($number)  {
     include("travel-data.inc.php");
-	$content = '<div class="row"><div class="col-md-4">';
-	$content .= generateLink("post.php?id".${"postId".$number},constructImage("images/".${"thumb".$number},${"title".$number}),"");
-	$content .= '</div><div class="col-md-8">';
-	$content .= '<h2>'.${"title".$nnumber}.'</h2>';
-	$content .='<div class="details">Posted by'.generateLink('user.php?id='.${"userId".$number},${"userName".$number},'').'<span class ="pull-right">'.${"date".$number}.'</span>';
-	$content .='<p>'.constructRating(${"reviewsRating".$number}).' '.${"reviewsNum".$number}.'Reviews</p></div>';
-	$content .='<p class="excerpt">'.${"excerpt".$number}.'</p>';
-	$content .='<p>'.generateLink("post.php?id=".${"postId".$number},'Read more','btn btn-primary btn-sm').'</p>';
-	$content .='</div>';
-	$content .='</div><hr>';
-	echo $content;
 }
 
 /*
@@ -42,8 +31,5 @@ function constructRating($rating) {
     
     return $imgTags;    
 }
-function constructImage($src,$alt){
-	$image='<img src="'.$src.'" alt="'.$alt.'" class="img-responsive">';
-        return $image;
-}
+
 ?>
